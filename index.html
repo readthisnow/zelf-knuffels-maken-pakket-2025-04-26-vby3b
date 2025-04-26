@@ -1,30 +1,50 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zelf Knuffels Maken Pakket | Creatief & Leuk</title>
     <meta name="description" content="Ontdek ons complete knuffels maken pakket met korting. Maak je eigen unieke knuffels met onze premium materialen en handleiding.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-gradient-to-b from-white to-gray-50">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-purple-600">KnuffelMaker</a>
+                    <a href="https://readthisnow.github.io/zelf-knuffels-maken-pakket-2025-04-26-vby3b" class="text-2xl font-bold text-purple-600 hover:text-purple-700 transition-colors duration-300">KnuffelMaker</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
+                
+                <button class="mobile-menu-button md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Kenmerken</a>
                     <a href="#benefits" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Contact</a>
+                </div>
+
+                <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg">
+                    <div class="flex flex-col space-y-4 p-4">
+                        <a href="#features" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Kenmerken</a>
+                        <a href="#benefits" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Voordelen</a>
+                        <a href="#testimonials" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Reviews</a>
+                        <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">Over Ons</a>
+                        <a href="#faq" class="text-gray-600 hover:text-purple-600 transition-colors duration-300">FAQ</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -35,14 +55,14 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
-                        Zelf Knuffels Maken Pakket
+                        Creëer Magische Momenten met Ons Knuffels Maken Pakket
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-                        Koop Zelf Knuffels Maken Pakket Met Korting
+                        Ontdek de vreugde van het maken van je eigen unieke knuffels met ons premium DIY pakket. Nu met 25% korting!
                     </p>
                     <div class="flex justify-center gap-4">
                         <a href="https://amzn.to/42x6ZXR" class="inline-flex items-center px-8 py-4 rounded-full text-lg font-semibold text-white bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                            Bestel Nu
+                            Bestel Nu Met Korting
                             <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                             </svg>
@@ -54,27 +74,127 @@
 
         <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Unieke Kenmerken</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Premium Kenmerken</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-purple-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Premium Materialen</h3>
-                        <p class="text-gray-600">Hoogwaardige stoffen en vulling voor de perfecte knuffel.</p>
+                        <h3 class="text-xl font-semibold mb-4">Luxe Materialen</h3>
+                        <p class="text-gray-600">Zacht pluche, duurzame stoffen en hypoallergene vulling voor knuffels van de hoogste kwaliteit.</p>
                     </div>
-                    <!-- Additional feature cards with similar structure -->
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Complete Set</h3>
+                        <p class="text-gray-600">Alles wat je nodig hebt in één pakket: patronen, naald en draad, schaar, en gedetailleerde instructies.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Stap-voor-stap Gids</h3>
+                        <p class="text-gray-600">Duidelijke instructies met foto's en video tutorials voor beginners en gevorderden.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="benefits" class="py-24 bg-gray-50">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Voordelen</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Waarom Kiezen voor Ons Pakket?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Benefits content -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-2xl font-semibold mb-4 text-purple-600">Creativiteit Ontwikkelen</h3>
+                        <p class="text-gray-600">Ontdek je creatieve kant en maak unieke knuffels die nergens anders te vinden zijn. Perfect voor persoonlijke geschenken of decoratie.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-2xl font-semibold mb-4 text-purple-600">Kwaliteitsgarantie</h3>
+                        <p class="text-gray-600">Alle materialen zijn zorgvuldig geselecteerd en getest op duurzaamheid. 100% tevredenheidsgarantie op elk pakket.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Geweldig pakket! Ik heb al drie knuffels gemaakt voor mijn kinderen. De instructies zijn helder en de materialen van topkwaliteit."</p>
+                        <p class="font-semibold">Lisa van der Berg</p>
+                        <p class="text-sm text-gray-500">Moeder van twee</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Perfect voor beginners! Na één weekend had ik mijn eerste knuffel af. Super trots op het resultaat!"</p>
+                        <p class="font-semibold">Mark Jansen</p>
+                        <p class="text-sm text-gray-500">Hobbyist</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De video tutorials waren een geweldige hulp. Zelfs zonder ervaring kon ik een professioneel uitziende knuffel maken."</p>
+                        <p class="font-semibold">Emma de Vries</p>
+                        <p class="text-sm text-gray-500">Creatieve ondernemer</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Uitstekende klantenservice en snelle levering. De materialen zijn van topkwaliteit en duurzaam."</p>
+                        <p class="font-semibold">Peter Bakker</p>
+                        <p class="text-sm text-gray-500">Handwerk specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Over KnuffelMaker</h2>
+                <div class="space-y-8 text-gray-600">
+                    <p class="leading-relaxed">
+                        KnuffelMaker begon in 2020 als een klein familiebedrijf met een grote droom: het maken van knuffels toegankelijk maken voor iedereen. Wat begon als een hobby in onze woonkamer is uitgegroeid tot een geliefde Nederlandse onderneming die duizenden mensen heeft geholpen hun eigen unieke knuffels te creëren.
+                    </p>
+                    <p class="leading-relaxed">
+                        Onze missie is om creativiteit en handwerk te stimuleren door kwalitatieve DIY-pakketten aan te bieden die voor iedereen toegankelijk zijn. We geloven in duurzaamheid, kwaliteit en persoonlijke aandacht, en streven ernaar om elke klant te helpen hun creatieve dromen waar te maken.
+                    </p>
                 </div>
             </div>
         </section>
@@ -83,17 +203,78 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Veelgestelde Vragen</h2>
                 <div class="space-y-6" x-data="{ selected: null }">
-                    <!-- FAQ items -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-medium">Hoe lang duurt het maken van een knuffel?</span>
+                            <svg class="w-6 h-6 text-purple-600" :class="{'transform rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 1" class="p-4 pt-0">
+                            <p class="text-gray-600">Afhankelijk van je ervaring en het gekozen patroon duurt het maken van een knuffel gemiddeld 2-4 uur. Beginners kunnen er wat langer over doen, maar met onze duidelijke instructies lukt het iedereen!</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-medium">Wat zit er allemaal in het pakket?</span>
+                            <svg class="w-6 h-6 text-purple-600" :class="{'transform rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 2" class="p-4 pt-0">
+                            <p class="text-gray-600">Elk pakket bevat premium stoffen, vulling, naalden, draad, een schaar, patronen, en een uitgebreide handleiding met video-tutorials. Alles wat je nodig hebt om direct te beginnen!</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-medium">Is ervaring met naaien nodig?</span>
+                            <svg class="w-6 h-6 text-purple-600" :class="{'transform rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 3" class="p-4 pt-0">
+                            <p class="text-gray-600">Nee, het pakket is geschikt voor alle niveaus. We leren je stap voor stap de benodigde technieken. Zelfs zonder ervaring kun je prachtige resultaten bereiken.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-medium">Kan ik het pakket retourneren?</span>
+                            <svg class="w-6 h-6 text-purple-600" :class="{'transform rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 4" class="p-4 pt-0">
+                            <p class="text-gray-600">Ja, we bieden een 30-dagen retourgarantie op ongeopende pakketten. Als je niet tevreden bent, krijg je je geld volledig terug.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="flex justify-between items-center w-full p-4 text-left">
+                            <span class="font-medium">Hoe lang duurt de levering?</span>
+                            <svg class="w-6 h-6 text-purple-600" :class="{'transform rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 5" class="p-4 pt-0">
+                            <p class="text-gray-600">We verzenden binnen 24 uur na bestelling. Leveringen binnen Nederland duren meestal 1-2 werkdagen. Voor België en Duitsland is dit 2-3 werkdagen.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-purple-600 text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Begin Vandaag Met Knuffels Maken!</h2>
-                <p class="text-xl mb-12 text-purple-100">Nog maar enkele pakketten beschikbaar. Bestel snel!</p>
+        <section class="py-24 bg-purple-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center bg-purple-600/80 py-16 rounded-xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Begin Vandaag Met Jouw Creatieve Reis!</h2>
+                <p class="text-xl mb-12 text-purple-100">Nog maar enkele pakketten beschikbaar met 25% korting. Mis deze kans niet!</p>
                 <a href="https://amzn.to/42x6ZXR" class="inline-flex items-center px-8 py-4 rounded-full text-lg font-semibold bg-white text-purple-600 hover:bg-purple-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Bestel Nu Met Korting
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
                 </a>
             </div>
         </section>
@@ -104,19 +285,29 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                    <p class="mb-2">Email: contact@example.com</p>
+                    <p class="mb-2">Email: info@knuffelmaker.nl</p>
+                    <p>Tel: +31 (0)20 123 4567</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/zelf-knuffels-maken-pakket-2025-04-26-vby3b/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/zelf-knuffels-maken-pakket-2025-04-26-vby3b/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/zelf-knuffels-maken-pakket-2025-04-26-vby3b/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Volg Ons</h3>
                     <div class="flex space-x-4">
-                        <!-- Social media icons -->
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-pinterest text-2xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -125,5 +316,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
